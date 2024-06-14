@@ -9,17 +9,14 @@ int main()
     {
         cin >> a[i];
     }
+    sort(a, a + n);
     int flag = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        if (a[i] == a[i])
+        if (a[i] == a[i+1])
         {
             flag = 1;
             break;
-        }
-        else
-        {
-            flag = 0;
         }
     }
     if (flag)
